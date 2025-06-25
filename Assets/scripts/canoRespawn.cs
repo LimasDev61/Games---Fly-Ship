@@ -3,12 +3,11 @@ using UnityEngine;
 public class canoRespawn : MonoBehaviour
 {
 
-    [SerializeField] private float maxTime;
-    [SerializeField] private float heightRange;
+    [SerializeField] private float maxTime = 3.5f;
+    [SerializeField] private float heightRange = 2f;
     [SerializeField] private GameObject canos;
 
     private float timer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
@@ -16,7 +15,6 @@ public class canoRespawn : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -26,12 +24,12 @@ public class canoRespawn : MonoBehaviour
             timer = 0;
         }
 
-        timer += Time.captureDeltaTime;
+        timer += Time.deltaTime;
     }
 
     private void criarCano() {
         Vector3 spawnPos = transform.position + new Vector3(0, Random.Range(-heightRange, heightRange));
         GameObject cano = Instantiate(canos, spawnPos, Quaternion.identity);
-        Destroy(cano, 10f);
+        Destroy(cano, 6f);
     }
 }

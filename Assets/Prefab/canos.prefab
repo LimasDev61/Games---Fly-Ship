@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 827162545901953459}
   - component: {fileID: 2942669157584278765}
   m_Layer: 0
-  m_Name: cano-cima
+  m_Name: cano-baixo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 3394561019936794918}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -3.5, z: 1}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalPosition: {x: 0, y: -4.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3064777810846987952}
@@ -127,13 +127,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 1.6}
+    oldSize: {x: 1, y: 6.1538463}
     newSize: {x: 0.26, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 1.6}
+  m_Size: {x: 1, y: 6.1538463}
   m_EdgeRadius: 0
 --- !u!114 &2942669157584278765
 MonoBehaviour:
@@ -158,10 +158,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5090417728780749162}
   - component: {fileID: 5077630792385945098}
-  - component: {fileID: 4621918632465711989}
+  - component: {fileID: 3231821746508607270}
   - component: {fileID: 5410218980653856645}
   m_Layer: 0
-  m_Name: cano-baixo
+  m_Name: cano-cima
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,8 +176,8 @@ Transform:
   m_GameObject: {fileID: 8457249729655332399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalPosition: {x: 0, y: 4.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3064777810846987952}
@@ -237,7 +237,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4621918632465711989
+--- !u!61 &3231821746508607270
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,13 +275,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.26, y: 1.6}
+    oldSize: {x: 1, y: 6.1538463}
     newSize: {x: 0.26, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 1.6}
+  m_Size: {x: 1, y: 6.1538463}
   m_EdgeRadius: 0
 --- !u!114 &5410218980653856645
 MonoBehaviour:
@@ -306,6 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3064777810846987952}
   - component: {fileID: 2893131504123275682}
+  - component: {fileID: 1086797886609938206}
   m_Layer: 0
   m_Name: canos
   m_TagString: Untagged
@@ -326,8 +327,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3043220107869307660}
   - {fileID: 5090417728780749162}
+  - {fileID: 3043220107869307660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2893131504123275682
@@ -364,7 +365,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.36413044, y: 0.27074504}
+  m_Offset: {x: 0.43569064, y: 0.018539906}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -374,5 +375,18 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.12246251, y: 1.8775873}
+  m_Size: {x: 0.12861872, y: 2.1865616}
   m_EdgeRadius: 0
+--- !u!114 &1086797886609938206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214812888840802544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914350b742e0ded4683e015bddcb074f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2

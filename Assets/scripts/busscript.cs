@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
 
-    [SerializeField] private float vel = 1.5f;
+    [SerializeField] private float vel = 2.5f;
     [SerializeField] private float rotationSpeed = 10f;
 
     private Rigidbody2D rb;
