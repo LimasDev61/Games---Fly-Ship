@@ -1,12 +1,9 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
     public static gameManager instance;
-
-    [SerializeField] private GameObject gameOver;
 
     private void Awake()
     {
@@ -20,7 +17,7 @@ public class gameManager : MonoBehaviour
 
     public void gameOverS()
     {
-        gameOver.SetActive(true);
+        SceneManager.LoadScene("GameOver");
         Time.timeScale = 0;
     }
 

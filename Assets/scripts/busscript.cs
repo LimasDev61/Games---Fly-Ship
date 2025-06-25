@@ -17,14 +17,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             rb.linearVelocity = Vector2.up * vel;
         }
+
     }
 
     private void FixedUpdate()
     {
         transform.rotation = Quaternion.Euler(0, 0, rb.linearVelocity.y * rotationSpeed);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        gameManager.instance.gameOverS();
     }
 }
