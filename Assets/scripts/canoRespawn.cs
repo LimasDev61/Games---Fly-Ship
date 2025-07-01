@@ -4,7 +4,7 @@ public class canoRespawn : MonoBehaviour
 {
 
     [SerializeField] private float maxTime = 3.5f;
-    [SerializeField] private float heightRange = 2f;
+    [SerializeField] private float heightRange = 3.2f;
     [SerializeField] private GameObject canos;
 
     private float timer;
