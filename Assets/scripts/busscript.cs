@@ -17,7 +17,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame || Touchscreen.current.press.wasPressedThisFrame)
         {
             rb.linearVelocity = Vector2.up * vel;
         }
