@@ -7,4 +7,9 @@ public class moveCano : MonoBehaviour
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        ScoreScript.instance.IncreaseScore();
+    }
 }

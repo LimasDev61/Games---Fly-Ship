@@ -34,7 +34,16 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("obstaculo"))
         {
-           gameManager.instance.gameOverS();
+            gameManager.instance.gameOverS();
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("points"))
+        {
+            ScoreScript.instance.IncreaseScore();
+            PlayerPrefs.SetInt("score", ScoreScript.instance.score);
         }
     }
 }

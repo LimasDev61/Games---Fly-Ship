@@ -19,8 +19,8 @@ public class ScoreScript : MonoBehaviour
     }
     void Start()
     {
-        currentScoreTxt.text = score.ToString();
-        highScoreTxt.text = PlayerPrefs.GetInt("highScore", 0).ToString();
+        currentScoreTxt.text = $"Pontos: {score}";
+        highScoreTxt.text = $"Recorde: {PlayerPrefs.GetInt("highScore", 0)}";
         UpdateHighScore();
     }
 
@@ -29,14 +29,14 @@ public class ScoreScript : MonoBehaviour
         if (score > PlayerPrefs.GetInt("highScore"))
         {
             PlayerPrefs.SetInt("highScore", score);
-            highScoreTxt.text = score.ToString();
+            highScoreTxt.text = "Recorde: " + score.ToString();
         }
     }
 
     public void IncreaseScore()
     {
-        score++;
-        currentScoreTxt.text = score.ToString();
+        score += 100;
+        currentScoreTxt.text = "Pontos: " + score.ToString();
         UpdateHighScore();
     }
 }

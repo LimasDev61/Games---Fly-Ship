@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9214812888840802544
+--- !u!1 &3028126570138393127
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3064777810846987952}
-  - component: {fileID: 2893131504123275682}
-  - component: {fileID: 1086797886609938206}
+  - component: {fileID: 5933415144766228091}
+  - component: {fileID: 4849118242561703653}
   m_Layer: 0
-  m_Name: canos
-  m_TagString: Untagged
+  m_Name: pontos
+  m_TagString: points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3064777810846987952
+--- !u!4 &5933415144766228091
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9214812888840802544}
+  m_GameObject: {fileID: 3028126570138393127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 651106423408058085}
-  - {fileID: 145554119327260283}
-  m_Father: {fileID: 0}
+  m_Children: []
+  m_Father: {fileID: 3064777810846987952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2893131504123275682
+--- !u!61 &4849118242561703653
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9214812888840802544}
+  m_GameObject: {fileID: 3028126570138393127}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -69,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.48226255, y: 0.9758103}
+  m_Offset: {x: 0.45787716, y: 0.11318302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79,8 +76,43 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.13118863, y: 2.4718843}
+  m_Size: {x: 0.08424568, y: 2.790351}
   m_EdgeRadius: 0
+--- !u!1 &9214812888840802544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3064777810846987952}
+  - component: {fileID: 1086797886609938206}
+  m_Layer: 0
+  m_Name: canos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3064777810846987952
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214812888840802544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 651106423408058085}
+  - {fileID: 145554119327260283}
+  - {fileID: 5933415144766228091}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1086797886609938206
 MonoBehaviour:
   m_ObjectHideFlags: 0
